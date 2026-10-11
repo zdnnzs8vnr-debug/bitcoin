@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GUSTAVOEURO — redirect</title>
+<style>
+  html,body{margin:0;height:100%;background:#05060d;color:#eef0f8;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;display:flex;
+    align-items:center;justify-content:center}
+  .box{text-align:center}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:99px;background:#ffb020;margin-right:8px;animation:p 1.4s ease-in-out infinite}
+  @keyframes p{0%,100%{opacity:1}50%{opacity:.3}}
+  a{color:#ffb020}
+</style>
+<script>
+  (function(){
+    var hash = location.hash || '#/node';
+    location.replace(location.origin + '/' + hash);
+  })();
+</script>
+</head>
+<body>
+  <div class="box">
+    <div><span class="dot"></span>RITORNO AL NODO...</div>
+    <p><a href="/#/node">clicca qui se non vieni reindirizzato</a></p>
+  </div>
+</body>
+</html>
